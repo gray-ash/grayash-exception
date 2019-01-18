@@ -19,6 +19,13 @@ public class PCRuntimeException extends RuntimeException {
         if(Log.isErrorEnabled())
             Log.error("Throwing PCRuntimeException");
     }
+    
+    
+    public PCRuntimeException(){
+        super();
+        if(Log.isErrorEnabled())
+            Log.error("Throwing PCRuntimeException");
+    }
 
 
 }
