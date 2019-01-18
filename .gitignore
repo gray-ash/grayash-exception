@@ -7,7 +7,6 @@
 *.class
 *.jar
 *.MF
-*.xml
 *.lst
 target/classes/META-INF/maven/com.github.gray-ash/common-exception/pom.properties
 target/maven-archiver/pom.properties
