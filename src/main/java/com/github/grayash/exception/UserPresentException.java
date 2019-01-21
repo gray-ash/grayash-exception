@@ -9,8 +9,8 @@ public class UserPresentException extends PCRuntimeException {
 
 
 
-    public UserPresentException(String customerId){
-        super(customerId);
+    public UserPresentException(){
+        super();
         if(Log.isErrorEnabled())
             Log.error("Throwing UserPresentException");
 

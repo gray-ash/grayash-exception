@@ -9,8 +9,8 @@ public class CustomerIdNotFoundException extends PCRuntimeException{
 
 
 
-    public CustomerIdNotFoundException(String customerId){
-        super(customerId);
+    public CustomerIdNotFoundException(){
+        super();
         if(Log.isErrorEnabled())
             Log.error("Throwing CustomerIdNotFoundException");
     }

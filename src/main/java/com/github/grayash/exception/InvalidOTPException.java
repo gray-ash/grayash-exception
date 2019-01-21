@@ -3,18 +3,23 @@ package com.github.grayash.exception;
 import org.slf4j.LoggerFactory;
 import org.slf4j.Logger;
 
-public class OTPNotMatchException extends PCRuntimeException{
+public class InvalidOTPException extends PCRuntimeException{
 
-    private static final Logger Log = LoggerFactory.getLogger(OTPNotMatchException.class);
+    private static final Logger Log = LoggerFactory.getLogger(InvalidOTPException.class);
     private int count=0;
 
 
 
-    public OTPNotMatchException(String customerId){
-        super(customerId);
+    public InvalidOTPException(){
+        super();
 
         if(Log.isErrorEnabled())
             Log.error("Throwing OTPNotMatchException");
+    }
+    
+    public InvalidOTPException(int count){
+        super();
+        this.count = count;
     }
 
     public void setOtpErrorCount(int count){

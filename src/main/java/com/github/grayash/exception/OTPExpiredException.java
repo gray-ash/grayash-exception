@@ -9,8 +9,8 @@ public class OTPExpiredException extends PCRuntimeException{
 
 
 
-    public OTPExpiredException(String customerId){
-        super(customerId);
+    public OTPExpiredException(){
+        super();
         if(Log.isErrorEnabled())
             Log.error("Throwing OTPExpiredException");
     }
